@@ -9,7 +9,7 @@ use Illuminate\Notifications\Notifiable;
 
 class Admin extends Authenticatable
 {
-    use Notifiable; // Add this trait
+    use Notifiable; 
 
     protected $fillable = ['name', 'email', 'password', 'wallet_id'];
 
