@@ -24,27 +24,4 @@ class AdminService implements AdminServiceInterface
         return $admin && password_verify($credentials['password'], $admin->password);
     }
 
-    // public function getAdmin(int $id): Admin
-    // {
-    //     try {
-    //         return $this->adminRepository->findById($id);
-    //     } catch (\Exception $e) {
-    //         throw new InvalidArgumentException('Admin not found.');
-    //     }
-    // }
-
-    // public function updateProfile(int $id, array $data): Admin
-    // {
-    //     if (isset($data['password']) && !empty($data['password'])) {
-    //         $data['password'] = Hash::make($data['password']);
-    //     } else {
-    //         unset($data['password']);
-    //     }
-
-    //     try {
-    //         return $this->adminRepository->update($id, $data);
-    //     } catch (\Exception $e) {
-    //         throw new InvalidArgumentException('Failed to update profile: ' . $e->getMessage());
-    //     }
-    // }
 }
