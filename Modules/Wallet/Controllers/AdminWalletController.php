@@ -14,7 +14,7 @@ class AdminWalletController extends Controller
         return view(
             'admin::admin.wallet.show',
             [
-                'wallet' => $wallet, // Pass the actual Eloquent model
+                'wallet' => $wallet, 
             ]
         );
     }
