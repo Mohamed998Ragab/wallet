@@ -22,7 +22,7 @@ class AdminTopUpRequestController extends Controller
         try {
             $requests = $this->topUpRequestService->all();
             return view('admin::admin.top_up_requests.index', [
-                'requests' => $requests, // Passing raw collection
+                'requests' => $requests, 
             ]);
         } catch (\Exception $e) {
             return redirect()->back()
