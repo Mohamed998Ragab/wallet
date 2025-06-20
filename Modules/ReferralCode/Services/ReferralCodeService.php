@@ -18,7 +18,6 @@ class ReferralCodeService implements ReferralCodeServiceInterface
 
     public function generate(int $generatorId, string $generatorType): ReferralCode
     {
-        // No need to deactivate old codes - we'll just check for unused ones
         return $this->referralCodeRepository->create($generatorId, $generatorType);
     }
 
