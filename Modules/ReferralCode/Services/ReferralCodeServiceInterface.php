@@ -14,7 +14,7 @@ interface ReferralCodeServiceInterface
     public function getActiveAdminReferralCode(int $adminId): ?ReferralCode;
     public function findByCode(string $code): ?ReferralCode;
 
-    public function useCode(string $code, int $userId): ?ReferralCode;  // Add this
+    public function useCode(string $code, int $userId): ?ReferralCode;  
     public function getActiveByGenerator(int $generatorId, string $generatorType): ?ReferralCode;
 
 }
