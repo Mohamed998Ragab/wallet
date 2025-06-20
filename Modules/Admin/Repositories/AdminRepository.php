@@ -20,15 +20,4 @@ class AdminRepository implements AdminRepositoryInterface
         return Admin::where('email', $email)->firstOrFail();
     }
 
-    // public function all(): Collection
-    // {
-    //     return Admin::all();
-    // }
-
-    // public function update(int $id, array $data): Admin
-    // {
-    //     $admin = $this->findById($id);
-    //     $admin->update($data);
-    //     return $admin;
-    // }
 }
