@@ -1,5 +1,4 @@
 <?php
-// Modules/Wallet/Exceptions/InsufficientBalanceException.php
 namespace Modules\Wallet\Exceptions;
 
 use Exception;
